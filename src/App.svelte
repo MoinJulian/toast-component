@@ -1,18 +1,23 @@
 <script lang="ts">
-  import Menu from "./lib/components/Menu.svelte";
-  import Toast from "./lib/components/Toast.svelte";
+	import Header from "./lib/components/Header.svelte";
+	import Menu from "./lib/components/Menu.svelte";
+	import Toast, {
+		type toast_position,
+	} from "./lib/components/Toast.svelte";
 
+	let position: toast_position = "top-right";
 </script>
 
-<Toast></Toast>
+<Toast {position} />
+<Header />
 
 <main>
-  <Menu></Menu>
+	<Menu bind:position />
 </main>
 
 <style>
-  main {
-    max-width: 32rem;
-    margin-inline: auto;
-  }
+	main {
+		max-width: 32rem;
+		margin-inline: auto;
+	}
 </style>
