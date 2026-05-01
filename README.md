@@ -1,5 +1,7 @@
 # Toast components for Svelte
 
+> Developed while following a tutorial uploaded by ScriptRaccoon: [Video](https://youtu.be/k8vvE9j1tvQ?si=KQ_z9gSRy-xXmdrz)
+
 This repo contains a single-file Toast component which you can copy paste into your Svelte (or SvelteKit) project.
 
 Demo: https://toast-components.netlify.app
